@@ -1,5 +1,10 @@
 ## 2.1.0
 
+* Removed reliance of CFBundleAlternateIcons
+* Made include array required
+
+## 2.1.0
+
 * Add `showAlert` option to `setAlternateIconName` to hide the icon change alert on iOS using a private API
   * Default is `true` meaning it uses the normal API by default and it is opt-in and at your own risk to use the private API
   * Thanks to @Flucadetena for the PR #17
