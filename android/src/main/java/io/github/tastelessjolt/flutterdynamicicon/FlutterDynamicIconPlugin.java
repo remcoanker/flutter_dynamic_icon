@@ -17,12 +17,6 @@ public class FlutterDynamicIconPlugin implements FlutterPlugin, ActivityAware {
   private MethodChannel channel;
   public static ActivityPluginBinding _activityBinding;
 
-  @SuppressWarnings("deprecation")
-  public static void registerWith(io.flutter.plugin.common.PluginRegistry.Registrar registrar) {
-    final FlutterDynamicIconPlugin plugin = new FlutterDynamicIconPlugin();
-    plugin.setupChannel(registrar.messenger(), registrar.context());
-  }
-
   @Override
   public void onAttachedToEngine(FlutterPlugin.FlutterPluginBinding binding) {
     setupChannel(binding.getBinaryMessenger(), binding.getApplicationContext());
